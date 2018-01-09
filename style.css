@@ -1,0 +1,77 @@
+body {
+  background-color: gray;
+}
+
+#strict-mode-setting:hover {
+  color: cyan;
+}
+
+.reset:active {
+  color: red;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  height: 400px;
+  width: 500px;
+  margin-left: 30%;
+}
+
+.ran {
+  border: 2px solid white;
+}
+
+.gamebutton {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+#blue {
+  border: 5px solid blue;
+  grid-area: 1 / 1 / span 1 / span 3;
+}
+
+#blue:hover {
+  background-color: blue;
+}
+
+#green {
+  border: 5px solid green;
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#green:hover {
+  background-color: green;
+}
+
+#red {
+  border: 5px solid red;
+  float: right;
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#red:hover {
+  background-color: red;
+}
+
+#orange {
+  border: 5px solid orange;
+  grid-area: 3/ 2/ span 1/ span 1;
+}
+
+#orange:hover {
+  background-color: orange;
+}
+
+#counter {
+  grid-area: 2 / 2 / span 1 / span 1;
+  font-size: 4rem;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+}

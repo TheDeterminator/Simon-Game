@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--Features to include: 
+-$(#green, #red, #blue, #orange).onClick(funciton just the wrapping function; 
+-have the wrapped function defined apprpopriately
+-add keyboard event handlers for the arrow keys
+-->
+
+<h1>Minimalist Simon Game</h1>
+<h2>Strict Mode? <a id='strict-mode-setting' onClick='strictMode()'>Off</a> -- <a class="reset" onClick="newGame()">Reset</a></h2>
+
+
+<div class="grid">
+  <div class='gamebutton' id='blue' onClick='addToPlayer(this.id)'></div>
+
+  <div class='gamebutton' id='green' onClick='addToPlayer(this.id)'></div>
+  <div id='counter'>0</div>
+  <div class='gamebutton' id='red' onClick='addToPlayer(this.id)'></div>
+
+  <div class='gamebutton' id='orange' onClick='addToPlayer(this.id)'></div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
